@@ -33,6 +33,10 @@ header p {
   font-size: 16px;
 }
 
+header img {
+  height: 80px;
+}
+
 nav {
   display: flex;
   flex-direction: column;
