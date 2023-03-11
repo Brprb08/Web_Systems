@@ -24,8 +24,7 @@ header {
 }
 
 header h1 {
-  font-size: 50px;
-  padding-left: 30px;
+  font-size: 40px;
   font-weight: bold;
   align-self: left;
 }
@@ -64,23 +63,31 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #333;
+  background-color: #832019;
 }
 
 .active {
-  background-color: rgb(99, 99, 99);
+  background-color: #333;
 }
 
 .active:hover {
-  background-color: rgb(99, 99, 99);
   cursor: default;
+  background-color: #333;
 }
 
 .home-btn {
-  background-color: #212121;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  background-color: #f44336;
   border: none;
   cursor: pointer;
   color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: #832019;
 }
 
 section {
@@ -118,7 +125,7 @@ section button {
 }
 
 section button:hover {
-  background-color: #f67861;
+  background-color: #832019;
 }
 
 section {
