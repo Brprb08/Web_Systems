@@ -140,6 +140,19 @@ section {
 
 @media screen and (max-width: 800px) {
   header h1 {
-    font-size: 70px;
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+  header p {
+    font-size: 15px;
   }
 }
