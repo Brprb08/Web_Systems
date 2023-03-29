@@ -1,0 +1,48 @@
+.card{
+    display:flex;
+    flex-direction: column;
+    background-color: #333;
+    padding:10px;
+    border-radius: 8px;
+}
+
+.container{
+    display:grid;
+    grid-template: 1fr 2fr / 1fr 1fr;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 20%;
+}
+
+p{
+    color:white;
+}
+
+h3{
+    color:white;
+    align-self: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.socials{
+    display:grid;
+    grid-template: 1fr 2fr/ 1fr 1fr 1fr;
+    background-color: #333;
+    padding:10px;
+    border-radius: 8px;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    justify-items: center;
+    row-gap: 10%;
+    
+}
+
+img{
+    max-width: 15vw;
+    max-height: 15vh;
+}
+
+.follow{
+    grid-column-end: span 3;
+}
