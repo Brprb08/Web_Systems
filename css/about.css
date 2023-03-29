@@ -1,4 +1,4 @@
- {
+.git {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -89,6 +89,9 @@
   .home-btn:hover {
     background-color: #832019;
   }
+  .box{
+    border: #212121;
+  }
   
   section {
     margin-top: 80px;
@@ -96,6 +99,7 @@
     padding: 40px;
     background-color: #fff;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    height: 120vh;
   }
   
   section h2 {
@@ -109,6 +113,7 @@
     margin-bottom: 20px;
     text-align: center;
   }
+
   
   section button {
     display: block;
@@ -128,14 +133,14 @@
     background-color: #832019;
   }
   
-  section {
-    height: 90vh;
-  }
   
   .main-section {
     justify-content: center;
     align-items: center;
     padding: 0px;
+  }
+  br{
+    float: right;
   }
   
   
