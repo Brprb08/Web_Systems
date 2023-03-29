@@ -94,6 +94,7 @@ section {
   margin-top: 80px;
   margin-left: 180px;
   padding: 40px;
+  height: 100vh;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -128,9 +129,6 @@ section button:hover {
   background-color: #832019;
 }
 
-section {
-  height: 90vh;
-}
 
 .main-section {
   justify-content: center;
@@ -141,15 +139,16 @@ section {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(33.33% - 20px);
+  /* flex-basis: calc(33.33% - 20px); */
   height: 400px;
+  width: 400px;
   background-color: #333;
   border-radius: 8px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -181,7 +180,53 @@ section {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1550px) {
+  section {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+  section {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  section {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  section {
+    height: 150vh;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  section {
+    height: 210vh;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  section {
+    height: 300vh;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    height: 160vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  section {
+    height: 160vh;
+  }
+
   header h1 {
     font-size: 30px;
   }
@@ -190,12 +235,16 @@ section {
     font-size: 20px;
   }
 
-  .card {
-    flex-basis: calc(50% - 20px);
-  }
+  
+
 }
 
 @media screen and (max-width: 600px) {
+
+  .section {
+    height: 180vh;
+  }
+
   header h1 {
     font-size: 20px;
   }
