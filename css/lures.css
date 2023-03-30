@@ -129,7 +129,6 @@ section button:hover {
   background-color: #832019;
 }
 
-
 .main-section {
   justify-content: center;
   align-items: center;
@@ -188,7 +187,7 @@ section button:hover {
 
 @media screen and (max-height: 1000px) {
   section {
-    height: 100vh;
+    height: 140vh;
   }
 }
 
@@ -234,13 +233,9 @@ section button:hover {
   header p {
     font-size: 20px;
   }
-
-  
-
 }
 
 @media screen and (max-width: 600px) {
-
   .section {
     height: 180vh;
   }
