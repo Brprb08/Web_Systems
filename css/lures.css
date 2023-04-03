@@ -25,7 +25,7 @@ header {
 
 header::before,
 header::after {
-  content: '';
+  content: "";
   flex: 1;
 }
 
@@ -39,7 +39,6 @@ header::after {
   right: 0;
   height: 100%;
   padding: 0 20px;
-
 }
 
 header h1 {
@@ -131,7 +130,7 @@ section {
   margin-top: 80px;
   margin-left: 180px;
   padding: 40px;
-  height: 100vh;
+  height: 140vh;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -242,30 +241,28 @@ section button:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
   body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
-  
   }
-  
+
   .header-wrapper {
     flex-wrap: wrap;
     overflow-x: hidden;
     width: 100%;
     padding: 0 20px;
   }
-  
+
   header p {
-  /* font-size: 20px; */
-  display: none;
+    /* font-size: 20px; */
+    display: none;
   }
-  
+
   header img {
     display: none;
   }
-  
+
   nav {
     display: flex;
     flex-direction: column;
@@ -275,30 +272,30 @@ section button:hover {
     left: -100%;
     top: 80px;
   }
-  
+
   .nav-btn {
     display: flex;
     padding: 5px 10px;
     font-size: 24px;
     border-radius: 10px;
   }
-  
+
   .nav-open {
     left: 0;
   }
-  
+
   .home-btn {
     /* margin-left: auto;
     margin-right: auto; */
     display: block;
     left: 0;
   }
-  
+
   section {
     width: 100%; /* Add padding to both sides */
     margin-left: 0;
     padding: 40px 10px; /* Reduce padding for smaller screens */
     overflow-x: hidden;
+    height: 120vh;
   }
-  }
-
+}
