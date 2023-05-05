@@ -192,15 +192,15 @@
   .picture1{
     display: flex;
     float: left;
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 18%;
 
   }
   .picture2{
     display: flex;
     float: left;
-    height: 25%;
-    width: 25%;
+    height: 15%;
+    width: 18%;
   }
 
   .nav-btn {
@@ -348,5 +348,21 @@
       section {
         height: 100vh;
       }
+    }
+
+    #picture1box{
+      border: solid black;
+      border-color:#212121;
+      float: left;
+      margin: 10px;
+    }
+    #picture2box{
+      border: solid black;
+      float:right;
+      margin: 10px;
+
+    }
+    p{
+      line-height: 50pt;
     }
     
