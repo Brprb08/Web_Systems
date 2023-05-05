@@ -2,11 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #f0f0f0;
   line-height: 1.5;
   display: flex;
@@ -30,7 +29,7 @@ header {
 
 header::before,
 header::after {
-  content: '';
+  content: "";
   flex: 1;
 }
 
@@ -80,7 +79,6 @@ header img {
 .header-spacer {
   flex-grow: 1;
 }
-
 
 nav {
   display: flex;
@@ -176,17 +174,17 @@ section button {
   font-weight: bold;
   color: #fff;
   background-color: #f44336;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-transition: background-color 0.3s ease, transform 0.2s ease;
-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
 }
 
 section button:hover {
-background-color: #832019;
-transform: translateY(-2px);
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #832019;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* section {
@@ -194,14 +192,13 @@ height: 90vh;
 } */
 
 .main-section {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-btn {
-  display: none;
   background-color: #f44336;
   padding: 5px 10px;
   color: white;
@@ -212,6 +209,24 @@ align-items: center;
   cursor: pointer;
   font-size: 24px;
   margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 45px;
+  z-index: 1;
+  background-image: url("../images/kisspng-arrow-computer-icons-logo-white-down-arrow-png-5ab1bd5cde13f0.7986932615215977889096.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-section {
@@ -225,64 +240,82 @@ align-items: center;
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 1001px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
 
-body {
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;
+  .header-wrapper {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0 20px;
+  }
 
-}
+  header p {
+    /* font-size: 20px; */
+    display: none;
+  }
 
-.header-wrapper {
-  flex-wrap: wrap;
-  overflow-x: hidden;
-  width: 100%;
-  padding: 0 20px;
-}
+  header img {
+    display: none;
+  }
 
-header p {
-/* font-size: 20px; */
-display: none;
-}
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    left: -100%;
+    top: 80px;
+  }
 
-header img {
-  display: none;
-}
+  .nav-btn {
+    display: flex;
+    padding: 5px 10px;
+    font-size: 24px;
+    border-radius: 10px;
+  }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  left: -100%;
-  top: 80px;
-}
+  .nav-btn img {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-.nav-btn {
-  display: flex;
-  padding: 5px 10px;
-  font-size: 24px;
-  border-radius: 10px;
-}
+  .nav-btn:hover {
+    background-color: #832019;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
 
-.nav-open {
-  left: 0;
-}
+  .nav-open {
+    left: 0;
+  }
 
-.home-btn {
-  /* margin-left: auto;
+  .home-btn {
+    /* margin-left: auto;
   margin-right: auto; */
-  display: block;
-  left: 0;
-}
+    display: block;
+    left: 0;
+  }
 
-section {
-  width: 100%; /* Add padding to both sides */
-  margin-left: 0;
-  padding: 40px 10px; /* Reduce padding for smaller screens */
-  overflow-x: hidden;
+  section {
+    width: 100%; /* Add padding to both sides */
+    margin-left: 0;
+    padding: 40px 10px; /* Reduce padding for smaller screens */
+    overflow-x: hidden;
+  }
 }
-}
-
