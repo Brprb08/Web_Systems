@@ -187,9 +187,9 @@ section button:hover {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* section {
-height: 90vh;
-} */
+section {
+  height: 100vh;
+}
 
 .main-section {
   display: flex;
@@ -318,4 +318,9 @@ height: 90vh;
     padding: 40px 10px; /* Reduce padding for smaller screens */
     overflow-x: hidden;
   }
+}
+
+#slideshow {
+  height: 50vh;
+  width: 50wv;
 }

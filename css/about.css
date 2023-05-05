@@ -241,64 +241,29 @@ br {
   box-sizing: border-box;
 }
 
-@media screen and (max-height: 900px) {
-  section {
-    height: 130vh;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  section {
-    height: 120vh;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  section {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-height: 650px) {
-  section {
-    height: 150vh;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  section {
-    height: 150vh;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  section {
-    height: 150vh;
-  }
-}
-
-@media screen and (max-height: 420px) {
-  section {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-height: 350px) {
-  section {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  section {
-    height: 120vh;
-  }
-}
-
 @media screen and (min-width: 1001px) {
   .nav-btn {
     display: none;
   }
+}
+
+.nav-open {
+  left: 0;
+}
+
+.home-btn {
+  /* margin-left: auto;
+      margin-right: auto; */
+  display: block;
+  left: 0;
+}
+
+section {
+  width: 100%; /* Add padding to both sides */
+  margin-left: 0;
+  padding: 40px 10px; /* Reduce padding for smaller screens */
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 @media screen and (max-width: 1000px) {
