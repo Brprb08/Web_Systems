@@ -9,6 +9,12 @@
     background-color: #f0f0f0;
     line-height: 1.5;
   }
+  .picture1{
+    display: flex;
+    float: left;
+    height: 65%;
+    width: 32%;
+  }
 
 header {
     display: flex;
@@ -143,7 +149,7 @@ header {
   
   section h2 {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: center;
   }
   
@@ -187,12 +193,20 @@ header {
     font-size: 24px;
     margin-left: 15px;
   }
+
+  .paragraph{
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 90%;
+    margin: 0;
+  }
   
   .main-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     margin: 0 auto;
     width: 100%;
     height: calc(100vh - 80px);
