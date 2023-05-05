@@ -300,3 +300,6 @@ section button:hover {
     height: 120vh;
   }
 }
+.flipcard{
+  transform: rotateY(180deg);
+}
