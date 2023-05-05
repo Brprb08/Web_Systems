@@ -189,7 +189,6 @@ section button:hover {
   border-radius: 8px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   overflow: hidden;
-  
 }
 
 .card-header {
@@ -218,7 +217,6 @@ section button:hover {
 }
 
 .nav-btn {
-  display: none;
   background-color: #f44336;
   padding: 5px 10px;
   color: white;
@@ -229,6 +227,24 @@ section button:hover {
   cursor: pointer;
   font-size: 24px;
   margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 45px;
+  z-index: 1;
+  background-image: url("../images/kisspng-arrow-computer-icons-logo-white-down-arrow-png-5ab1bd5cde13f0.7986932615215977889096.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-section {
@@ -240,6 +256,12 @@ section button:hover {
   width: 100%;
   height: calc(100vh - 80px);
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 1001px) {
+  .nav-btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -280,6 +302,21 @@ section button:hover {
     padding: 5px 10px;
     font-size: 24px;
     border-radius: 10px;
+  }
+
+  .nav-btn img {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .nav-btn:hover {
+    background-color: #832019;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .nav-open {
