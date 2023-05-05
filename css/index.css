@@ -134,6 +134,7 @@ nav a:hover {
   text-decoration: none;
   transition: 0.2s ease-in-out;
   border-radius: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .home-btn:hover {
@@ -289,4 +290,8 @@ section {
 #slideshow{
   height:50vh;
   width:50wv;
+}
+
+.tagline {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
