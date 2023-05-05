@@ -118,6 +118,7 @@ header {
     text-decoration: none;
     transition: 0.2s ease-in-out;
     border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .home-btn:hover {
@@ -271,3 +272,7 @@ header {
       width: 100%;
       height: 250px;
     }
+
+.tagline {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
