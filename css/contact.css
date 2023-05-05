@@ -137,3 +137,13 @@ img{
 .tagline {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+footer{
+  height:5vh;
+  background-color: #212121;
+  text-align: center;
+  position: fixed;
+  bottom:0px;
+  width:100vw;
+  color:#fff;
+}
