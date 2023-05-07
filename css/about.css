@@ -118,6 +118,8 @@ nav a:hover {
   text-decoration: none;
   transition: 0.2s ease-in-out;
   border-radius: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .home-btn:hover {
@@ -133,7 +135,7 @@ nav a:hover {
 
 section {
   margin-top: 80px;
-  margin-left: 180px;
+  margin-left: 300px;
   padding: 40px;
   height: 150vh;
   background-color: #fff;
@@ -177,11 +179,7 @@ section button:hover {
   background-color: #832019;
 }
 
-.main-section {
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
+
 br {
   float: right;
 }
@@ -236,7 +234,8 @@ br {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
+  margin-left: 180px;
+  /* width: 100%; */
   height: calc(100vh - 80px);
   box-sizing: border-box;
 }
@@ -261,9 +260,9 @@ br {
 section {
   width: 100%; /* Add padding to both sides */
   margin-left: 0;
-  padding: 40px 10px; /* Reduce padding for smaller screens */
+  padding: 90px 10px; /* Reduce padding for smaller screens */
   overflow-x: hidden;
-  height: 100vh;
+  height: 120vh;
 }
 
 @media screen and (max-width: 1000px) {
@@ -406,6 +405,8 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0px;
+    margin-left: 0px;
+    margin-top: 80x;
   }
   br {
     float: right;
@@ -460,9 +461,9 @@ section {
   section {
     width: 100%; /* Add padding to both sides */
     margin-left: 0;
-    padding: 40px 10px; /* Reduce padding for smaller screens */
+     padding: 40px 10px; /* Reduce padding for smaller screens */
     overflow-x: hidden;
-    height: 100vh;
+    height: 120vh;
   }
 }
 
@@ -472,9 +473,33 @@ section {
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
   section {
-    height: 130vh;
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  section {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  section {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  section {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  section {
+    padding-top: 10px;
   }
 }
 
@@ -532,15 +557,27 @@ section {
   section {
     width: 100%; /* Add padding to both sides */
     margin-left: 0;
-    padding: 40px 10px; /* Reduce padding for smaller screens */
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+    padding-top: 0px;
     overflow-x: hidden;
-    height: 100vh;
+    height: 120vh;
   }
 }
 
+
+
 @media screen and (max-width: 800px) {
   section {
-    height: 100vh;
+    height: 130vh;
+    margin-top: 80px;
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section {
+    height: 200vh;
+    margin-top: 80px;
+    padding-top: 400px;
   }
 }
 
