@@ -1,16 +1,10 @@
-<?php
-require_once('sql-conn.php');
-session_start();
-
-@mysqli_close($dbc);
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/lures.css" />
+    <link rel="stylesheet" href="lures.css" />
     <title>Brothers Bait</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="lures.js"></script>
@@ -44,38 +38,29 @@ session_start();
     </nav>
     <section>
       <h2 class="underline">Jigs and Lures</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-header"><h3>Jigs!</h3></div>
+      <?php
+        require_once("sql-conn.php");
 
-          <img src="../images/HairJig.webp" alt="Hair Jigs" />
-          <p>
-            Custom made Hair Jigs in many colors and different Jigs!
-            Find out more below!
-          </p>
-          <input type="button" id="info-button" value="More Info">
-        </div>
-        <div class="card">
-          <div class="card-header"><h3>Musky Bucktails</h3></div>
+        $query = "SELECT * FROM bucktail";
+        $response = @mysqli_query($dbc,$query);
+        if($response) {
+          echo '<div class="cards">';
+          while ($row = mysqli_fetch_array($response)) {
+              echo '<div class="card"><div class="card-header"><h3>' . $row['type'] . '<h3></div><p>Size of Blade: ' . $row['size of blade'] . '</p><p>Number of Blades: ' . $row['Number of blades'] .'</div>'; 
+          }
+        }
 
-          <img src="../images/bucktail.jpg" alt="Musky bucktails" />
-          <p>
-            Custom made Musky Bucktails in different shapes and colors!
-            Find out more below!
-          </p>
-          <input type="button" id="info-button" value="More Info">
-        </div>
-        <div class="card">
-          <div class="card-header"><h3>More!</h3></div>
-
-          <img src="../images/moretackle.jpg" alt="Tackle box" />
-          <p>
-            We make more such like jigging wraps,cranks, you name it!
-            Find out more below!
-          </p>
-          <input type="button" id="info-button" value="More Info">
-        </div>
-      </div>
+        $query = "SELECT * FROM hairjig";
+        $response = @mysqli_query($dbc,$query);
+        if($response) {
+            echo '<div class="cards"><div class="card"><div class="card-header"><h3>Jigs</h3></div>';
+            while ($row = mysqli_fetch_array($response)) {
+                echo '<p>' . $row['Size'] . '</p>'; 
+            }
+            echo '</div></div></div>';
+        }
+        mysqli_close($dbc);
+        ?>
     </section>
   </body>
   <script src="../js/index.js"></script>

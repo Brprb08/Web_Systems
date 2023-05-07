@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/rods.css" />
+    <link rel="stylesheet" href="rods.css" />
     <title>Brothers Bait</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link
@@ -43,22 +43,24 @@
         <?php
         require_once("sql-conn.php");
 
-        $query = "SELECT length, action FROM rods";
+        $query = "SELECT * FROM rods";
         $response = @mysqli_query($dbc,$query);
         if($response) {
-            echo '<h3>Rods</h3>';
+            echo '<h3>Rods</h3><div class="cards">';
             while ($row = mysqli_fetch_array($response)) {
-                echo '<div><p>Length: ' . $row['length'] . '</p><p>Action: ' . $row['action'] . '</p></div>';
+                echo '<div class="card"><p>Length: ' . $row['length'] . ' Action: ' . $row['action'] . '</p></div>';
             }
+            echo '</div>';
         }
 
-        $query = "SELECT length, action FROM hardwaterrods";
+        $query = "SELECT * FROM hardwaterrods";
         $response = @mysqli_query($dbc,$query);
         if($response) {
-            echo '<h3>Hard Water Rods</h3>';
+            echo '<h3>Hard Water Rods</h3><div class="cards">';
             while ($row = mysqli_fetch_array($response)) {
-                echo '<div><p>Length: ' . $row['length'] . '</p><p>Action: ' . $row['action'] . '</p></div>'; 
+                echo '<div class="card"><p>Length: ' . $row['length'] . ' Action: ' . $row['action'] . '</p></div>'; 
             }
+            echo '</div>';
         }
         mysqli_close($dbc);
         ?>
