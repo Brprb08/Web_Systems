@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2023 at 01:39 AM
+-- Generation Time: May 07, 2023 at 02:12 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `brothers bait`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bucktail`
+--
+
+CREATE TABLE `bucktail` (
+  `id` int(8) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `size of blade` varchar(20) NOT NULL,
+  `Number of blades` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bucktail`
+--
+
+INSERT INTO `bucktail` (`id`, `type`, `size of blade`, `Number of blades`) VALUES
+(1, 'bucktail', '10', 1),
+(2, 'flash', '11', 2),
+(3, 'Marabou', '9', 3);
 
 -- --------------------------------------------------------
 
@@ -55,8 +77,16 @@ INSERT INTO `hairjig` (`id`, `Size`) VALUES
 CREATE TABLE `hardwaterrods` (
   `id` int(11) NOT NULL,
   `length` varchar(20) NOT NULL,
-  `action` varchar(20) NOT NULL
+  `action` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `hardwaterrods`
+--
+
+INSERT INTO `hardwaterrods` (`id`, `length`, `action`) VALUES
+(1, '31-36in', 'ultra light/light'),
+(2, '31-36in', 'light/medium,medium/heavy');
 
 -- --------------------------------------------------------
 
@@ -66,13 +96,28 @@ CREATE TABLE `hardwaterrods` (
 
 CREATE TABLE `rods` (
   `id` int(10) NOT NULL,
-  `length` varchar(20) NOT NULL,
-  `action` varchar(20) NOT NULL
+  `length` varchar(30) NOT NULL,
+  `action` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `rods`
+--
+
+INSERT INTO `rods` (`id`, `length`, `action`) VALUES
+(1, '5,4ft', 'light'),
+(2, '6,6-7,0ft', 'light/medium,medium/heavy'),
+(3, '7-9ft', 'medium/heavy,heavy,Xheavy');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `bucktail`
+--
+ALTER TABLE `bucktail`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `hairjig`
@@ -97,6 +142,12 @@ ALTER TABLE `rods`
 --
 
 --
+-- AUTO_INCREMENT for table `bucktail`
+--
+ALTER TABLE `bucktail`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `hairjig`
 --
 ALTER TABLE `hairjig`
@@ -106,13 +157,13 @@ ALTER TABLE `hairjig`
 -- AUTO_INCREMENT for table `hardwaterrods`
 --
 ALTER TABLE `hardwaterrods`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `rods`
 --
 ALTER TABLE `rods`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
