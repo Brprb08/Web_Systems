@@ -53,11 +53,11 @@
         $query = "SELECT * FROM hairjig";
         $response = @mysqli_query($dbc,$query);
         if($response) {
-            echo '<div class="cards"><div class="card jig-card"><div class="card-header"><h3 class="card-title">Jigs</h3></div>';
+            echo '<div class="card jig-card"><div class="card-header"><h3 class="card-title">Jigs</h3></div><p>';
             while ($row = mysqli_fetch_array($response)) {
-                echo '<p>' . $row['Size'] . '</p>'; 
+                echo $row['Size'] . '<br>'; 
             }
-            echo '</div></div></div>';
+            echo '</p></div></div>';
         }
         mysqli_close($dbc);
         ?>
