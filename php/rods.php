@@ -46,22 +46,22 @@
         $query = "SELECT * FROM rods";
         $response = @mysqli_query($dbc,$query);
         if($response) {
-            echo '<h3>Rods</h3><div class="cards">';
-            while ($row = mysqli_fetch_array($response)) {
-                echo '<div class="card"><p>Length: ' . $row['length'] . ' Action: ' . $row['action'] . '</p></div>';
-            }
-            echo '</div>';
+          echo '<div class="cards"><div class="card"><div class="card-header"><h3>Soft Water</h3></div>';
+          while ($row = mysqli_fetch_array($response)) {
+              echo '<p>Length: ' . $row['length'] . '<br>Action: ' . $row['action'] . '</p>';
+          }
+          echo '</div>';
         }
 
         $query = "SELECT * FROM hardwaterrods";
         $response = @mysqli_query($dbc,$query);
         if($response) {
-            echo '<h3>Hard Water Rods</h3><div class="cards">';
-            while ($row = mysqli_fetch_array($response)) {
-                echo '<div class="card"><p>Length: ' . $row['length'] . ' Action: ' . $row['action'] . '</p></div>'; 
-            }
-            echo '</div>';
-        }
+          echo '<div class="card"><div class="card-header"><h3>Hard Water</h3></div>';
+          while ($row = mysqli_fetch_array($response)) {
+              echo '<p>Length: ' . $row['length'] . '<br>Action: ' . $row['action'] . '</p>'; 
+          }
+          echo '</div></div>';
+      }
         mysqli_close($dbc);
         ?>
       </div>
