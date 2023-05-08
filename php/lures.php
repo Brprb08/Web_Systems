@@ -19,7 +19,7 @@
       </a>
       
         <img src="../images/madRedFish.png" alt="Logo" />
-        <a href="#" class="nav-btn">Nav</a>
+        <a href="#" class="nav-btn"></a>
     
       
         <p>Home of the Best Fishing Lures</p>
