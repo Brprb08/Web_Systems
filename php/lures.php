@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="lures.css" />
+    <link rel="stylesheet" href="../css/lures.css" />
     <title>Brothers Bait</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="lures.js"></script>
@@ -14,12 +14,12 @@
   <body>
     <header>
       <div class="header-wrapper">
-      <a href="index.html" class="home-btn">
+      <a href="../html/index.html" class="home-btn">
         <h1>Brothers Bait</h1>
       </a>
       
         <img src="../images/madRedFish.png" alt="Logo" />
-        <a href="#" class="nav-btn">Nav</a>
+        <a href="#" class="nav-btn"></a>
     
       
         <p>Home of the Best Fishing Lures</p>
@@ -27,14 +27,14 @@
     </header>
     <nav>
       <a class="active">Lures</a>
-      <a href="rods.html">Rods</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="about.html">About Us</a>
-      <a href="whatWeDo.html">What we do</a>
-      <a href="inquiries.html">Inquiries</a>
-      <a href="questions.html">Common Questions</a>
-      <a href="contact.html">Contact</a>
+      <a href="../php/rods.php">Rods</a>
+      <a href="../html/services.html">Services</a>
+      <a href="../html/pricing.html">Pricing</a>
+      <a href="../html/about.html">About Us</a>
+      <a href="../html/whatWeDo.html">What we do</a>
+      <a href="../html/inquiries.html">Inquiries</a>
+      <a href="../html/questions.html">Common Questions</a>
+      <a href="../html/contact.html">Contact</a>
     </nav>
     <section>
       <h2 class="underline">Jigs and Lures</h2>
@@ -62,6 +62,7 @@
         mysqli_close($dbc);
         ?>
     </section>
+    <footer>Copyright 2023</footer>
   </body>
   <script src="../js/index.js"></script>
 </html>
