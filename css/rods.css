@@ -367,3 +367,43 @@ footer {
   width: 100vw;
   color: #fff;
 }
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  /* flex-basis: calc(33.33% - 20px); */
+  height: 400px;
+  width: 400px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.card-header {
+  display: flex;
+  background-color: #333;
+  color: white;
+  justify-content: center;
+  height: 40px;
+}
+
+.card-header h3 {
+  align-self: center;
+}
+
+.card img {
+  height: 45%;
+}
+
+.card p {
+  padding-top: 20px;
+  color: white;
+}
