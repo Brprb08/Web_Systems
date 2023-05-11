@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
+  height:60vh;
 }
 .row {
   background-color: #f7f7f7;
@@ -20,7 +21,7 @@
 }
 
 section {
-  height: 150vh;
+  height: 200vh;
 }
 
 @media screen and (min-width: 1001px) {

@@ -15,6 +15,29 @@ br {
   width: 18%;
 }
 
+#picture1box {
+  border: solid black;
+  border-color: #212121;
+  float: left;
+  margin: 10px;
+}
+#picture2box {
+  border: solid black;
+  float: right;
+  margin: 10px;
+}
+p {
+  line-height: 50pt;
+}
+
+section {
+  height: 120vh;
+}
+
+.about-info {
+  height: 60vh;
+}
+
 @media screen and (min-width: 1001px) {
   .nav-btn {
     display: none;
@@ -354,19 +377,4 @@ section {
     margin-top: 80px;
     padding-top: 400px;
   }
-}
-
-#picture1box {
-  border: solid black;
-  border-color: #212121;
-  float: left;
-  margin: 10px;
-}
-#picture2box {
-  border: solid black;
-  float: right;
-  margin: 10px;
-}
-p {
-  line-height: 50pt;
 }
