@@ -24,6 +24,36 @@ section {
   height: 200vh;
 }
 
+.power-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.fight-intensity {
+  height: 100%;
+  background-color: #832019;
+  border-radius: 10px;
+}
+
+.walleye {
+  width: 40%; 
+}
+
+.muskellunge {
+  width: 90%; 
+}
+
+.bass {
+  width: 70%;
+}
+
+.trout {
+  width: 50%; 
+}
+
 @media screen and (min-width: 1001px) {
   .nav-btn {
     display: none;
