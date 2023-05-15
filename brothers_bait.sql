@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2023 at 02:12 AM
+-- Generation Time: May 16, 2023 at 01:54 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bucktail` (
+  `picture` blob NOT NULL,
   `id` int(8) NOT NULL,
   `type` varchar(20) NOT NULL,
   `size of blade` varchar(20) NOT NULL,
@@ -38,10 +39,11 @@ CREATE TABLE `bucktail` (
 -- Dumping data for table `bucktail`
 --
 
-INSERT INTO `bucktail` (`id`, `type`, `size of blade`, `Number of blades`) VALUES
-(1, 'bucktail', '10', 1),
-(2, 'flash', '11', 2),
-(3, 'Marabou', '9', 3);
+INSERT INTO `bucktail` (`picture`, `id`, `type`, `size of blade`, `Number of blades`) VALUES
+('', 1, 'bucktail', '10', 1),
+('', 2, 'flash', '11', 2),
+('', 3, 'Marabou', '9', 3),
+(0x4c4f41445f46494c45282f446f776e6c6f6164732f6275636b7461696c2e6a706729, 7, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -50,6 +52,7 @@ INSERT INTO `bucktail` (`id`, `type`, `size of blade`, `Number of blades`) VALUE
 --
 
 CREATE TABLE `hairjig` (
+  `picture` blob NOT NULL,
   `id` int(8) NOT NULL,
   `Size` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -58,15 +61,16 @@ CREATE TABLE `hairjig` (
 -- Dumping data for table `hairjig`
 --
 
-INSERT INTO `hairjig` (`id`, `Size`) VALUES
-(1, '[1/32oz]'),
-(2, '[1/16oz]'),
-(3, '[1/8oz]'),
-(4, '[1/4oz]'),
-(5, '[3/8oz]'),
-(6, '[1/2oz]'),
-(7, '[3/4oz]'),
-(8, '[1oz]');
+INSERT INTO `hairjig` (`picture`, `id`, `Size`) VALUES
+('', 1, '[1/32oz]'),
+('', 2, '[1/16oz]'),
+('', 3, '[1/8oz]'),
+('', 4, '[1/4oz]'),
+('', 5, '[3/8oz]'),
+('', 6, '[1/2oz]'),
+('', 7, '[3/4oz]'),
+('', 8, '[1oz]'),
+(0x4c4f41445f46494c45282f446f776e6c6f6164732f6a69672e7765627029, 16, '');
 
 -- --------------------------------------------------------
 
@@ -145,13 +149,13 @@ ALTER TABLE `rods`
 -- AUTO_INCREMENT for table `bucktail`
 --
 ALTER TABLE `bucktail`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `hairjig`
 --
 ALTER TABLE `hairjig`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `hardwaterrods`
