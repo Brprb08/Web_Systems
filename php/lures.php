@@ -19,7 +19,7 @@
         <h1>Brothers Bait</h1>
       </a>
       
-        <img src="../images/madRedFish.png" alt="Logo" />
+        <img src="../images/favicon.ico" alt="Logo" />
         <a href="#" class="nav-btn"></a>
     
       
