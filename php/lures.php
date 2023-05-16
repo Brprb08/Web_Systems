@@ -47,7 +47,7 @@
         if($response) {
           echo '<div class="cards">';
           while ($row = mysqli_fetch_array($response)) {
-              echo '<div class="card lure-card"><div class="card-header"><h3 class="card-title">' . $row['type'] . '<h3></div><p>Size of Blade: ' . $row['size of blade'] . '</p><p>Number of Blades: ' . $row['Number of blades'] .'</p></div>'; 
+              echo '<div class="card lure-card"><div class="card-header"><h3 class="card-title">' . $row['type'] . '<h3><img src="' . $row['image'] . '" alt="Lure Image"></div><p>Size of Blade: ' . $row['size of blade'] . '</p><p>Number of Blades: ' . $row['Number of blades'] .'</p></div>'; 
           }
         }
 
