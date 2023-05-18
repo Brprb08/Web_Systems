@@ -65,7 +65,7 @@
       }
         mysqli_close($dbc);
         ?>
-      </div>
+      
     </section>
     <footer>Copyright 2023</footer>
      <script src="../js/index.js"></script>
