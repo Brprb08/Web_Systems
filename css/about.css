@@ -79,7 +79,7 @@ section {
 }
 
 section {
-  width: calc(100vw-180px); /* Add padding to both sides */
+  width: calc(100vw - 180px); /* Add padding to both sides */
   margin-left: 0;
   padding: 90px 10px; /* Reduce padding for smaller screens */
   overflow-x: hidden;
@@ -227,7 +227,7 @@ section {
     align-items: center;
     padding: 0px;
     margin-left: 0px;
-    margin-top: 80x;
+    margin-top: 80px;
   }
   br {
     float: right;
