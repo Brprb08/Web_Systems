@@ -61,7 +61,7 @@
           while ($row = mysqli_fetch_array($response)) {
               echo '<p>Length: ' . $row['length'] . '<br>Action: ' . $row['action'] . '</p>'; 
           }
-          echo '</div></div>';
+          echo '<img src="../images/rod.jpg" alt="Fishing Rod" class="rod-image"/></div></div>';
       }
         mysqli_close($dbc);
         ?>
