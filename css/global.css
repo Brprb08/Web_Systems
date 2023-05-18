@@ -249,6 +249,7 @@
     bottom:0px;
     width:100vw;
     color:#fff;
+    font-family:'Courier New', Courier, monospace;
   }
   
   @media screen and (min-width: 1001px) {
